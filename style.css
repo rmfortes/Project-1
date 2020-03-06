@@ -15,13 +15,14 @@ nav {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-row: 1 / span 1;
     padding: 20px;
+    grid-gap: 20px;
 }
 
 a {
     text-decoration: none;
     color: black;
     font-size: 9px;
-    text-align: center;
+    text-align: right;
 }
 
 .homebutton {
@@ -76,12 +77,14 @@ h3 {
 
 .secondrow {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     margin: auto;
-    width: 100vw;
+    width: 80vw;
     font-size: 11px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .secondrowimages {
@@ -111,12 +114,15 @@ button {
     padding: 10px;
 }
 
+
 .thirdrowimages {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
     width: 100vw;
     height: auto;
     max-width: 100%;
+    margin-bottom: 50px;
 }
 
 .thirdrowimage1 {
@@ -158,9 +164,6 @@ button {
     max-width: 100%;
 }
 
-.thirdrow {
-    margin: 5vw;
-}
 .thirdrowimage5 {
     grid-row: 2 / span 1;
     grid-column-start: 5;
