@@ -83,7 +83,6 @@ h3 {
 
 .secondrow-pods {
     display: flex;
-    align-items: flex-start;
     justify-content: center;
     margin: 10px;
     flex-direction: column;
@@ -91,6 +90,9 @@ h3 {
 }
 
 button {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     color: black;
     border: 1px solid gray;
     text-transform: uppercase;
@@ -174,7 +176,7 @@ footer {
     width: 20%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 576px) {
     nav {
       display: flex;
       flex-direction: column;
@@ -183,10 +185,19 @@ footer {
     .nav {
         margin: 20px;
     }
-    .secondrow{
-        border: solid red;
+    h3 {
+        font-size: 30px;
     }
-
+    .secondrow {
+        border-top: none;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    .secondrow-pods {
+        border-top: 1px solid gray;
+        display: flex;
+    }
   }
 
 
