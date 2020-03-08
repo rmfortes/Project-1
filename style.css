@@ -9,54 +9,41 @@ body {
 }
 
 nav {
+    padding: 20px;
     text-transform: uppercase;
     display: grid;
-    grid-template-rows: 1;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-row: 1 / span 1;
-    padding: 20px;
-    grid-gap: 20px;
 }
 
 a {
     text-decoration: none;
     color: black;
-    font-size: 9px;
-    text-align: right;
 }
 
-.homebutton {
-    font-size: 11px;
-    font-weight: bolder;
-    grid-column-start: 1;
-    grid-column-end: 3;
+.homeButton {
+    font-weight: bold;
+    font-size: 16px;
+    grid-row: 1;
+    grid-column: 1 / 3;
+    text-align: center;
 }
 
-.about {
-    grid-row: 1 / span 1;
-    grid-column-start: 3;
-    grid-column-end: 4;
+.nav {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.portfolio {
-    grid-column-start: 4;
-    grid-column-end: 5;
-}
-
-.testimonials {
-    grid-column-start: 5;
-    grid-column-end: 6;
-}
-
-.blog {
-    grid-column-start: 7;
-    grid-column-end: 8;
+.standardLinks {
+    font-size: 10px;
+    color:lightgray;
+    height: fit-content;
+    width: fit-content;
 }
 
 .contact {
+    grid-row: 1;
+    grid-column: 9 / 10;
     text-align: right;
-    grid-column-start: 12;
-    grid-column-end: 13;
 }
 
 .bannerimage {
